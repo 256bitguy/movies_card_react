@@ -1,6 +1,6 @@
 import React, { useState ,useEffect} from 'react';
 
-const FormComponent=()=> {
+const FormComponent=({named})=> {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [formData, setFormData] = useState(null);
@@ -50,6 +50,7 @@ const FormComponent=()=> {
    
   return (
     <form onSubmit={handleSubmit}>
+      <h1>{named}</h1>
       <label>
         Name:
         <input type="text" value={name} onChange={handleNameChange} />
