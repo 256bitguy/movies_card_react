@@ -1,0 +1,62 @@
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+.show-summary {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  animation: fadeIn 0.5s ease-in-out;
+  }
+  .show-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .show-details img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .summary-details {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .book-ticket-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .book-ticket-btn:hover {
+    background-color: #0056b3;
+  }
+ .summary-details p{
+    color:darkred;
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    
+ }
+ .show-summary h1{
+    color: brown;
+ }
